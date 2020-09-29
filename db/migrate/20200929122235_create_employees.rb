@@ -1,0 +1,15 @@
+class CreateEmployees < ActiveRecord::Migration[6.0]
+  def change
+    create_table :employees do |t|
+      t.string :name
+      t.string :surname
+      t.string :payroll
+      t.string :role
+      t.bigint :telephone
+      t.integer :status, index: true
+      t.datetime :clocked_at
+      t.boolean :clocked_in, :default => false, :null => false
+      t.timestamps
+    end
+  end
+end
