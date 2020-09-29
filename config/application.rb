@@ -31,9 +31,9 @@ module Meridian
 
 
     # Sets Time Zone
-    config.time_zone = 'Rome'
-    config.active_record.default_timezone = 'Rome'
-    
+    config.time_zone = 'London'
+    config.active_record.default_timezone = 'London'
+
     # Don't generate system test files.
     config.generators.system_tests = nil
   end
