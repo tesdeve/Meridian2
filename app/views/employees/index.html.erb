@@ -26,7 +26,7 @@
         <td><%= employee.role %></td>
         <td><%= employee.telephone %></td>
         <td><%= employee.status %></td>
-        <td><%= employee.clocked_at %></td>
+        <td><%= employee.clocked_at.strftime('%H:%M') %></td>
         <td><%= employee.clocked_in %></td>
         <td><%= link_to 'Show', employee %></td>
         <td><%= link_to 'Edit', edit_employee_path(employee) %></td>
